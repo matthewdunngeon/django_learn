@@ -20,6 +20,16 @@ def social_view(*args, **kwargs): #*args, **kwargs
 print("http://127.0.0.1:8000/hello/Matthew\n")
 
 def hello_there_view(request, name):
+        return render(
+        request,
+        'pages/hello_there.html',
+        {
+            'name': name,
+            'date': datetime.now()
+        }
+    )
+
+def hello_there2_view(request, name):
     now = datetime.now()
     formatted_now = now.strftime("%A, %d %B, %Y at %X")
 

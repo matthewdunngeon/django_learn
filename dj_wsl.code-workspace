@@ -1,7 +1,7 @@
 {
 	"folders": [
 		{
-			"path": "src"
+			"path": "."
 		}
 	],
 	"settings": {
@@ -11,7 +11,7 @@
 			"titleBar.activeForeground": "#ECFEFC"
 		},
 		"html.suggest.html5": true,
-		"python.pythonPath": "/home/matt/projects/django_learn/.venv/bin/python",
+		"python.pythonPath": "${workspaceFolder}/.venv/bin/python",
 		"python.terminal.activateEnvInCurrentTerminal": true
 	},
 	"launch": {
@@ -21,7 +21,7 @@
 				"name": "Python: Django",
 				"type": "python",
 				"request": "launch",
-				"program": "${workspaceFolder}/proj2/manage.py",
+				"program": "${workspaceFolder}/src/proj2/manage.py",
 				"args": [
 					"runserver",
 					"--noreload"

@@ -1,0 +1,33 @@
+{
+	"folders": [
+		{
+			"path": "src"
+		}
+	],
+	"settings": {
+		"workbench.colorCustomizations": {
+			"activityBar.background": "#04342F",
+			"titleBar.activeBackground": "#064842",
+			"titleBar.activeForeground": "#ECFEFC"
+		},
+		"html.suggest.html5": true,
+		"python.pythonPath": "d:\\projects\\django_learn\\venv\\Scripts\\python.exe",
+		"python.terminal.activateEnvInCurrentTerminal": true
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Python: Django",
+				"type": "python",
+				"request": "launch",
+				"program": "${workspaceFolder}/proj2/manage.py",
+				"args": [
+					"runserver",
+					"--noreload"
+				],
+				"django": true
+			}
+		]
+	}
+}

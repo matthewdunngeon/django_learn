@@ -29,7 +29,12 @@
 					"runserver",
 					"--noreload"
 				],
-				"django": true
+				"django": true,
+				"serverReadyAction": {
+					"pattern": ".*(https?:\\/\\/\\S+:[0-9]+\\/?).*",
+					"uriFormat": "%s",
+					"action": "openExternally"
+				  }
 			}
 		]
 	}
